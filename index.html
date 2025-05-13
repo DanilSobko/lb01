@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Конструктор резюме</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Конструктор резюме</h1>
+  <form id="resumeForm">
+    <fieldset>
+      <legend>Особиста інформація</legend>
+      <input type="text" id="name" placeholder="Ім'я та прізвище" required />
+      <input type="email" id="email" placeholder="Email" required />
+      <input type="number" id="age" placeholder="Вік" required />
+    </fieldset>
+
+    <fieldset>
+      <legend>Освіта</legend>
+      <textarea id="education" placeholder="Освіта" required></textarea>
+    </fieldset>
+
+    <fieldset>
+      <legend>Досвід роботи</legend>
+      <textarea id="experience" placeholder="Досвід роботи" required></textarea>
+    </fieldset>
+
+    <fieldset>
+      <legend>Навички</legend>
+      <input type="text" id="skills" placeholder="Навички (через кому)" required />
+    </fieldset>
+
+    <button type="submit">Створити резюме</button>
+    <button type="button" id="clearBtn">Очистити</button>
+  </form>
+
+  <div id="resumeOutput"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
