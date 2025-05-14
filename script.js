@@ -60,7 +60,7 @@ class PersonalInfo {
     const experience = document.getElementById('experience').value.trim();
     const skills = document.getElementById('skills').value.trim();
   
-    if (!name || !email || isNaN(age) || !education || !experience || !skills) {
+    if (!name || !email || !age || isNaN(age) || !education || !experience || !skills) {
       alert('Будь ласка, заповніть усі поля коректно.');
       return;
     }
