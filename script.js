@@ -59,9 +59,12 @@ class PersonalInfo {
     const education = document.getElementById('education').value.trim();
     const experience = document.getElementById('experience').value.trim();
     const skills = document.getElementById('skills').value.trim();
-  
+
+    const errorMsgEL = document.getElementByld('errorMsg');
+      errorMsgEl.textContent = '';
+      
     if (!name || !email || !age || isNaN(age) || !education || !experience || !skills) {
-      alert('Будь ласка, заповніть усі поля коректно.');
+      errorMsgEl.textContent = 'Будь ласка, заповніть усі поля коректно.';
       return;
     }
   
